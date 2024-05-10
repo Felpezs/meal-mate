@@ -7,13 +7,13 @@
     "build": "next build",
     "start": "next start",
     "lint": "next lint",
-    "prettier" : "prettier -w \"src/**/*.{jsx,tsx,js,ts}\"",
-    "precommit": "lint-staged"
+    "prettier": "prettier -w \"src/**/*.{jsx,tsx,js,ts}\"",
+    "prepare": "husky install"
   },
   "lint-staged": {
-    "src/**/*.{tsx, jsx, js, ts}": [
-      "eslint --quiet",
-      "prettier --write"
+    "src/**/*.{js,jsx,ts,tsx}": [
+      "npm run lint",
+      "npm run prettier"
     ]
   },
   "dependencies": {
@@ -25,9 +25,12 @@
     "@types/node": "^20",
     "@types/react": "^18",
     "@types/react-dom": "^18",
+    "@typescript-eslint/eslint-plugin": "^7.8.0",
+    "@typescript-eslint/parser": "^7.8.0",
     "eslint": "^8",
     "eslint-config-next": "14.2.3",
     "eslint-config-prettier": "^9.1.0",
+    "eslint-plugin-unused-imports": "^3.2.0",
     "husky": "^9.0.11",
     "lint-staged": "^15.2.2",
     "postcss": "^8",
