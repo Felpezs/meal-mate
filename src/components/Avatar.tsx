@@ -2,13 +2,13 @@ import Image from "next/image";
 
 const Avatar = () => {
   return (
-    <div className="w-7 h-7 rounded-full overflow-hidden">
+    <div className="h-7 w-7 overflow-hidden rounded-full">
       <Image
         alt="avatar image"
         src={"/avatar.jpg"}
         width={36}
         height={36}
-        objectFit="cover"
+        className="object-cover"
       />
     </div>
   );
