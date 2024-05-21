@@ -13,7 +13,7 @@ export default function Home() {
       <section className="col-span-full">
         <CaloriesCard />
       </section>
-      <section className="col-span-full flex gap-4">
+      <section className="col-span-full flex gap-4 justify-center">
         <MacroCard
           macroName="Proteins"
           maxValue={300}
