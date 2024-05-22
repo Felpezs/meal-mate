@@ -2,7 +2,7 @@ import Scale from "@/components/icons/Scale";
 
 const CaloriesCard = () => {
   return (
-    <div className="flex items-center justify-between rounded-xl bg-surface-foreground p-4">
+    <div className="flex items-center justify-between rounded-xl bg-surface-light p-4 dark:bg-surface-foreground">
       <div className="flex flex-col gap-2">
         <div className="flex items-center gap-4">
           <span className="rounded-md bg-primary-100 p-1">

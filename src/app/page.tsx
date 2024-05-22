@@ -1,5 +1,6 @@
 import CaloriesCard from "@/components/CaloriesCard";
 import MacroCard from "@/components/MacroCard";
+import MealTable from "@/components/MealTable";
 
 export default function Home() {
   return (
@@ -13,7 +14,7 @@ export default function Home() {
       <section className="col-span-full">
         <CaloriesCard />
       </section>
-      <section className="col-span-full flex gap-4 justify-center">
+      <section className="col-span-full flex justify-center gap-4">
         <MacroCard
           macroName="Proteins"
           maxValue={300}
@@ -32,6 +33,9 @@ export default function Home() {
           percentage={55}
           value={175}
         />
+      </section>
+      <section className="col-span-full">
+        <MealTable mealName="Breakfast"></MealTable>
       </section>
     </main>
   );
