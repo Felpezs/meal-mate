@@ -26,16 +26,16 @@ const config: Config = {
       15: "4.6875rem",
       16: "5rem",
     },
-    fontSize:{
-      xs:"0.625rem",
-      sm: '0.8rem',
-      base: '1rem',
-      md:"1.25rem",
-      lg: '1.563rem',
-      xl: '1.938rem',
-      '2xl': '2.438rem',
-      '3xl': '3.063rem',
-      '4xl': '3.813rem',
+    fontSize: {
+      xs: "0.625rem",
+      sm: "0.8rem",
+      base: "1rem",
+      md: "1.25rem",
+      lg: "1.563rem",
+      xl: "1.938rem",
+      "2xl": "2.438rem",
+      "3xl": "3.063rem",
+      "4xl": "3.813rem",
     },
     extend: {
       colors: {
@@ -52,7 +52,7 @@ const config: Config = {
         purple: {
           light: {
             primary: "#F7EEFF",
-            secondary: "#F0EFF2",
+            secondary: "#F2F1F4",
           },
           dark: {
             primary: "#250E39",
@@ -69,6 +69,7 @@ const config: Config = {
           "100": "#E2B0B0",
           "500": "#A30000",
         },
+        grey: "#CCC7D1",
       },
     },
   },
