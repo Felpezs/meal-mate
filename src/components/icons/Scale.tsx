@@ -1,12 +1,6 @@
-import { HTMLAttributes } from "react";
+import { Icon } from "@/types/icon";
 
-const Scale = ({
-  size = 24,
-  className = "fill-black",
-}: {
-  size?: number;
-  className?: HTMLAttributes<HTMLElement>["className"];
-}) => {
+const Scale = ({ size = 24, className = "fill-black" }: Icon) => {
   return (
     <svg
       xmlns="http://www.w3.org/2000/svg"
