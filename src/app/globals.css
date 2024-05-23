@@ -3,17 +3,27 @@
 @tailwind utilities;
 
 body {
-  @apply bg-surface-light;
-  @apply text-purple-dark-primary;
+  @apply bg-surface-light text-purple-dark-primary;
 }
 
 @media (prefers-color-scheme: dark) {
   body {
-    @apply bg-surface-dark;
-    @apply text-purple-light-primary;
+    @apply bg-surface-dark text-purple-light-primary;
   }
 }
 
 main {
   @apply mt-16;
+}
+
+@layer components {
+  .btn-primary {
+    @apply bg-accent-500 text-purple-dark-primary;
+  }
+  .btn-secondary {
+    @apply border-[1px] border-accent-500 bg-inherit text-purple-light-primary;
+  }
+  .btn-danger {
+    @apply bg-danger-500 text-danger-50;
+  }
 }
