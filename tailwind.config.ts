@@ -40,7 +40,9 @@ const config: Config = {
     extend: {
       colors: {
         accent: {
+          "400": "#c9f13a",
           "500": "#BCED09",
+          "600": "#abd808",
           "900": "#4B5D0B",
         },
         primary: {
@@ -67,6 +69,8 @@ const config: Config = {
         danger: {
           "50": "#F6E6E6",
           "100": "#E2B0B0",
+          "200": "#d58a8a",
+          "400": "#b53333",
           "500": "#A30000",
         },
         grey: "#CCC7D1",
