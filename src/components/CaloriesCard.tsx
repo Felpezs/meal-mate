@@ -2,7 +2,7 @@ import Scale from "@/components/icons/Scale";
 
 const CaloriesCard = () => {
   return (
-    <div className="flex items-center justify-between rounded-xl bg-surface-light p-4 dark:bg-surface-foreground">
+    <div className="shadow-card flex items-center justify-between rounded-xl bg-surface-light p-4 dark:bg-surface-foreground dark:shadow-none">
       <div className="flex flex-col gap-2">
         <div className="flex items-center gap-4">
           <span className="rounded-md bg-primary-100 p-1">
@@ -22,7 +22,7 @@ const CaloriesCard = () => {
       <div className="w-full max-w-[120px]">
         <div className="relative h-0 w-full overflow-hidden rounded-tl-[100%_200%] rounded-tr-[100%_200%] bg-primary-50 pb-[50%]">
           <div className="absolute left-0 top-full h-full w-full origin-[center_top] rotate-[0.25turn] bg-primary-500 transition-transform duration-200 ease-out"></div>
-          <div className="bold absolute left-[50%] top-[25%] flex h-[150%] w-[75%] translate-x-[-50%] items-center justify-center rounded-[50%] bg-surface-foreground pb-[25%] text-md text-accent-900 dark:text-accent-500">
+          <div className="bold absolute left-[50%] top-[25%] flex h-[150%] w-[75%] translate-x-[-50%] items-center justify-center rounded-[50%] bg-surface-light pb-[25%] text-md text-accent-900 dark:bg-surface-foreground dark:text-accent-500">
             66%
           </div>
         </div>

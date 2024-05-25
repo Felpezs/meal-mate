@@ -20,7 +20,7 @@ const FoodCard = ({
   grams,
 }: FoodCardProps) => {
   return (
-    <div className="flex flex-col rounded-xl bg-inherit p-4 shadow-sm dark:bg-surface-dark dark:shadow-none">
+    <div className="shadow-card flex flex-col rounded-xl bg-inherit p-4 dark:bg-surface-dark dark:shadow-none">
       <div className="flex">
         <h2 className="mr-auto text-base font-extrabold text-purple-dark-primary dark:text-purple-light-primary">
           {foodName}

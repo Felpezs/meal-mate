@@ -6,10 +6,11 @@ import Button from "./Button";
 import Plus from "./icons/Plus";
 import IconButton from "./IconButton";
 import Trash from "./icons/Trash";
+import FoodCardList from "./foodCard/FoodCardList";
 
 const MealTable = ({ mealName }: { mealName: string }) => {
   return (
-    <div className="flex flex-col gap-2 rounded-xl p-2 dark:bg-surface-foreground">
+    <div className="shadow-card flex flex-col gap-2 rounded-xl p-2 dark:bg-surface-foreground dark:shadow-none">
       <div className="flex items-center justify-between">
         <h2 className="text-md font-extrabold text-purple-dark-primary dark:text-purple-light-primary">
           {mealName}
@@ -33,6 +34,7 @@ const MealTable = ({ mealName }: { mealName: string }) => {
           </Button>
         </div>
       </div>
+      <FoodCardList />
     </div>
   );
 };
