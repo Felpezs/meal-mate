@@ -6,6 +6,7 @@ type IconButton = {
   variant: Variant;
   children: ReactElement;
   onClick: MouseEventHandler;
+  className?: HTMLAttributes<HTMLButtonElement>["className"];
 };
 
 const variantClass: {
@@ -16,11 +17,13 @@ const variantClass: {
   danger: "bg-danger-100 hover:bg-danger-200",
 };
 
-const IconButton = ({ variant, children, onClick }: IconButton) => {
+const IconButton = ({ variant, children, onClick, className }: IconButton) => {
   return (
     <button
       onClick={onClick}
-      className={`rounded-md p-1 transition-colors ${variantClass[variant]}`}
+      className={
+        `rounded-md p-1 transition-colors ${variantClass[variant]} ` + className
+      }
     >
       {children}
     </button>
