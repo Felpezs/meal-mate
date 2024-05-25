@@ -19,7 +19,7 @@ const Button = ({ icon, variant, children, onClick }: Button) => {
   return (
     <button
       onClick={onClick}
-      className={`flex items-center gap-2 rounded-full py-2 pr-5  ${variantClass[variant]} ${icon ? "pl-3" : "pl-5"}`}
+      className={`flex items-center gap-2 rounded-full py-2 pr-5 ${variantClass[variant]} ${icon ? "pl-3" : "pl-5"}`}
     >
       {icon}
       {children}
