@@ -1,6 +1,11 @@
 import CaloriesCard from "@/components/CaloriesCard";
 import MacroCard from "@/components/MacroCard";
-import MealTable from "@/components/MealTable";
+import MealTables from "@/components/MealTables";
+
+const meals = [
+  { id: 1, name: "Breakfast" },
+  { id: 2, name: "Lunch" },
+];
 
 export default function Home() {
   return (
@@ -35,7 +40,7 @@ export default function Home() {
         />
       </section>
       <section className="col-span-full">
-        <MealTable mealName="Breakfast"></MealTable>
+        <MealTables meals={meals} />
       </section>
     </main>
   );

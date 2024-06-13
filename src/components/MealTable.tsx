@@ -10,7 +10,7 @@ import FoodCardList from "./foodCard/FoodCardList";
 
 const MealTable = ({ mealName }: { mealName: string }) => {
   return (
-    <div className="shadow-card flex flex-col gap-2 rounded-xl p-2 dark:bg-surface-foreground dark:shadow-none">
+    <div className="flex flex-col gap-2 rounded-xl p-4 shadow-card dark:bg-surface-foreground dark:shadow-none">
       <div className="flex items-center justify-between">
         <h2 className="text-md font-extrabold text-purple-dark-primary dark:text-purple-light-primary">
           {mealName}
